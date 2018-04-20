@@ -227,7 +227,7 @@ if __name__ == '__main__':
   )
   # parser.parse_known_args()
   # 有时间一个脚本只需要解析所有命令行参数中的一小部分，剩下的命令行参数给两一个脚本或者程序。
-  # 在这种情况下，parse_known_args()就很有用。它很像parse_args()，但是它在接受到多余的命令行参数时不报错。
+  # 在这种情况下，parse_known_args()就很有用。它很像parse_args()，但是它在接受到多余(unparsed)的命令行参数时不报错。
   # 相反的，返回一个tuple类型的命名空间和一个保存着余下的命令行字符的list。
   # tf.app.run
   # 处理flag解析，然后执行main函数，
